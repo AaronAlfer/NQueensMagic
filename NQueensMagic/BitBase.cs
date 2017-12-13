@@ -107,7 +107,7 @@ namespace NQueensMagic
            
            Now, diagonals can be projected upwards and downwards. In the previous example there's no upward projection because
            the diagonal doesn't pass the 11 bitboard - which is an upper bitboard in relation to the 21 where the queen is
-           located. The 22 is considered a downward projection because it's the same as the lower bitboard 31 - if there was one. */
+           located. The 22 is considered a downward projection because it's the same as the imaginary bitboard below 21. */
 
         /// <summary> Bitmasks representing upper projections of top-left to bottom-right diagonals. </summary>
         private static readonly IReadOnlyList<ulong> _projectionsUpA8H1 = new ulong[]
