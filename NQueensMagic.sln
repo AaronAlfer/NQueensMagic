@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NQueensMagic", "NQueensMagic\NQueensMagic.csproj", "{1EE45A02-D03F-4464-A0EA-0C26BD663EC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NQueensMagicConsole", "NQueensMagicConsole\NQueensMagicConsole.csproj", "{5216B70B-10AE-420C-8D2A-DC4020D84A9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1EE45A02-D03F-4464-A0EA-0C26BD663EC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EE45A02-D03F-4464-A0EA-0C26BD663EC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EE45A02-D03F-4464-A0EA-0C26BD663EC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EE45A02-D03F-4464-A0EA-0C26BD663EC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5216B70B-10AE-420C-8D2A-DC4020D84A9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5216B70B-10AE-420C-8D2A-DC4020D84A9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5216B70B-10AE-420C-8D2A-DC4020D84A9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5216B70B-10AE-420C-8D2A-DC4020D84A9D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {073A87FB-0D87-40EA-A477-AAA56D9597BD}
+	EndGlobalSection
+EndGlobal
