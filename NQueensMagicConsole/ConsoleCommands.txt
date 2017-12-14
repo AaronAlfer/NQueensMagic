@@ -11,7 +11,7 @@ Universal:
 2. mode=x - Switches the operating mode. There are 2 modes currently:
             'All' and 'Completion'. The 1st is used to find all solutions
             on an NxN board, the 2nd is used to find 1 solution to a given
-            preset. You can either use a mode name or an index (0, 1) as 'x'.
+            preset. You can either use a mode name or an index (0, 1) for 'x'.
             
 3. solve - Launches the process of searching for solution(s).
 
