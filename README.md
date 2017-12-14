@@ -1,5 +1,7 @@
 # N Queens Magic
 *A program that solves the N Queens puzzle*
+## Project Structure
+In the repository, you can find 2 folders: 'NQueensMagic' and 'NQueensMagicConsole'. The former contains the core library. The latter simply bounds the program to the Windows Console UI. The Console interface makes use of simple commands that are explained in NQueensMagicConsole\ConsoleCommands.txt.
 ## Introduction
 So I was figuring out how to program my own chess engine, and suddenly I stumbled upon an article saying that some Math institute offers $1M to anyone who can 'solve a chess puzzle'. It had something to do with the P vs NP problem, and the thing was a bit trickier than what the title suggested (who would guess).
 
@@ -14,8 +16,6 @@ Eventually I decided: why not use the good old [backtracking](https://en.wikiped
 
 It was only after I finished the 1st version of the project that I realised: the original problem was not about finding all of the solutions per N. Instead, it stated: you either prove that there is an algorithm that can solve the completion(!) puzzle in a polynomial time OR prove that there isn't one. The 'completion' part here is key. What this means is basically another version of the puzzle in which you need to complete a given set of queens, i.e. having some of the queens already placed on the board, place the rest without moving the original ones. Now it seemed more like Sudoku. My algorithm was exponential, not polynomial (alas), but I modified the program so that it was now able to perform both tasks: either finding all solutions, or completing a randomly generated or a specified preset. I found the results to be quite interesting, and they are illustrated in the corresponding section of this document.
 
-## Project Structure
-In the repository, you can find 2 folders: 'NQueensMagic' and 'NQueensMagicConsole'. The former contains the core library. The latter simply bounds the program to the Windows Console UI. The Console interface makes use of simple commands that are explained in NQueensMagicConsole\ConsoleCommands.txt. The program is built and can be launched at NQueensMagicConsole\bin\Release\NQueensMagicConsole.exe (x64 only!).
 ## How It Works
 If you have read the introduction, you already get the idea that the core principle of this program is behind a scalable array of bitboards. The array is 1D but it can easily represent a 2D matrix - in the same way as a bitboard represents a 2D chessboard. But there is still a catch: all is good when N is a power of 8 (an Int64 in 2D-perspective has a side of 8) but what if that's not the case (N = 5, 12, 47, etc)? Because we can't just cut the utmost bitboards in half or in 3/4 or 5/8. Well, actually we can: all we need to do is mark the redundant bits as 'occupied' and they'll be ignored. Now, for example, a 9x9 board can be represented by 4 bitboards, and 3 of them would mostly contain redundant bits. Based on that, we can draw a conclusion that the algorithm will work most efficiently with N being a power of 8. But really, the difference is negligible compared to the effect of larger N values.
 
