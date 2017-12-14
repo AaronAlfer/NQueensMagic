@@ -1,5 +1,5 @@
 # N Queens Magic
-*A program that solves the N Queens puzzle*
+*A program that solves the N queens puzzle*
 ## Project Structure
 In the repository, you can find 2 folders: 'NQueensMagic' and 'NQueensMagicConsole'. The former contains the core library. The latter simply bounds the program to the Windows Console UI. The Console interface makes use of simple commands that are explained in NQueensMagicConsole\ConsoleCommands.txt.
 ## Introduction
@@ -8,7 +8,7 @@ So I was figuring out how to program my own chess engine, and suddenly I stumble
 [An article on the subject (not the one I saw first)](https://www.st-andrews.ac.uk/news/archive/2017/title,1539813,en.php)  
 [P vs NP](http://claymath.org/millennium-problems/p-vs-np-problem)
 
-Of course, I didn't expect to come up with a solution to the problem. But it made me curious: I thought, maybe I could experiment and arrive at some interesting conclusions. 'Thanks' to the media, I misenterpreted the problem thinking that one needs to invent an algorithm that finds ALL solutions to the puzzle (starting from an empty board) really fast. For example, the standard 8 Queens puzzle has 92 unique solutions. So, to my understanding, the algorithm was supposed to find all of them, and then store them somehow. That wasn't quite the case, and I'll explain in a minute.
+Of course, I didn't expect to come up with a solution to the problem. But it made me curious: I thought, maybe I could experiment and arrive at some interesting conclusions. 'Thanks' to the media, I misenterpreted the problem thinking that one needs to invent an algorithm that finds ALL solutions to the puzzle (starting from an empty board) really fast. For example, the standard 8 queens puzzle has 92 unique solutions. So, to my understanding, the algorithm was supposed to find all of them, and then store them somehow. That wasn't quite the case, and I'll explain in a minute.
 
 At first, I tried to come up with a non-conventional way of placing 8 queens so that the combination ends up being one of the 12 [fundamental solutions](https://en.wikipedia.org/wiki/Eight_queens_puzzle#Solutions). Interestingly enough, I found that if you take one solution, and shift all the queens one square in any direction (the utmost queen jumps over and ends up on the other side), you can get another fundamental solution! Just by doing that, I managed to find 8 solutions out of 12. So if you're learning chess and your teacher ever asks you to solve this puzzle in a number of ways, you can use this method. Anyway, as you can imagine, there is still a couple of problems. First of all, not all solutions can be found this way. Secondly, we still need to find the first solution somehow. And lastly, it all becomes much more complicated on larger boards: the algorithm has to change depending on N. So I gave up on that idea.
 
