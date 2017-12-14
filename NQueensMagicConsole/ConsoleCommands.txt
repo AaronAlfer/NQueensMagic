@@ -15,7 +15,7 @@ Universal:
             
 3. solve - Launches the process of searching for solution(s).
 
-4. threads - Sets the maximum number of concurrent threads.
+4. threads=x - Sets the maximum number of concurrent threads.
 ---------------------------------------------------------------------------------
 'Completion' mode:
 
