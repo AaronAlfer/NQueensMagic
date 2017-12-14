@@ -24,7 +24,7 @@ Universal:
 2. psize=x - Sets the number of queens in a generated preset. [0 < x < N]
 
 3. preset=x - Use this command to define a custom preset. A preset is
-              specified in the same form as it is displayed in. So for
+              specified in the same form as it is displayed in. So, for
               example, '4 _ 0 6 1 7 _ _' is a valid preset for an 8x8 board.
 ---------------------------------------------------------------------------------          
 Commands are case-neutral. Spacing is also irrelevant. So you can type 'N = 10'
