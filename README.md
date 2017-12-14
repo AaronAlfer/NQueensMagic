@@ -39,3 +39,5 @@ With N = 16, all 14,772,512 solutions were found in about 20 seconds. It actuall
 In Completion mode, as I've said, everything is random. The biggest board in my case was 512x512, and I once got a solution for it in 57 milliseconds. The precalculated attack masks took 10 GB of memory. It's important to note that the number of pre-placed queens in that case was 480 (93.75% of N). Be it 256 or even 400, I wouldn't be lucky enough to get any result in a reasonable amount of time. So you see the problem here.
 ## Conclusion
 Well, the end result seems a bit useless. And I haven't solved any millennium problem. However, I can think of a number of different fields where this program can be of use. For example, I imagine it could serve as the basis for some weird encryption algorithm, or indeed a way of arranging objects of some sort, or it could be converted into a Sudoku program. Maybe you see a great opportunity for this project. Or maybe you think that my implementation is stupid, and you have a better idea. That's why I made it open source. Please feel free to contact me if you have any suggestions or questions.
+
+[Aaron Alfer](https://github.com/AaronAlfer)
