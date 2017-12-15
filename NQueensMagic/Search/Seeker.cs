@@ -30,12 +30,12 @@ namespace NQueensMagic.Search
 
         /// <summary> The maximum number of attack masks per search path. </summary>
         /// <remarks>
-        /// <n>Basically, a set consists of many queens, and each of them has her own attack mask.
+        /// <para>Basically, a set consists of many queens, and each of them has her own attack mask.
         /// Because the search is done from bottom to top, i.e. per rank - not per file, attack
-        /// masks build up, and therefore, the term 'column' is used.</n>
-        /// <n>The number of attack masks does not equal the number of queens or N, however. This
+        /// masks build up, and therefore, the term 'column' is used.</para>
+        /// <para>The number of attack masks does not equal the number of queens or N, however. This
         /// is because the first attack mask combines the masks of 2 queens at once, and the
-        /// mask of the last queen doesn't count.</n>
+        /// mask of the last queen doesn't count.</para>
         /// </remarks>
         protected int ColumnHeight;
 
