@@ -1,7 +1,7 @@
 # N Queens Magic
 *A program that solves the N queens puzzle*
 ## Project Structure
-In the repository, you can find 2 folders: 'NQueensMagic' and 'NQueensMagicConsole'. The former contains the core library, and the latter simply connects the program to the Windows Console UI. To get the executable, download the latest release. Keep in mind that the executable is targeted for x64 systems.
+In the repository, you can find 2 folders: 'NQueensMagic' and 'NQueensMagicConsole'. The former contains the core library, and the latter simply connects the program to the Windows Console UI. To get the executable, [download the latest release](https://github.com/AaronAlfer/NQueensMagic/releases/download/v1.0/NQueensMagic-1.0_BIN.zip). Keep in mind that the executable is targeted for x64 systems.
 ## Introduction
 So I was figuring out how to program my own chess engine, and suddenly I stumbled upon an article saying that some Math institute offers $1M to anyone who can 'solve a chess puzzle'. It had something to do with the P vs NP problem, and the thing was a bit trickier than what the title suggested (who would guess).
 
